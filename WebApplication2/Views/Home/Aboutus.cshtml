@@ -1,0 +1,170 @@
+﻿@{
+    Layout = "_Layout";
+}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - Наша гостиница</title>
+    <style>
+        /* Основные стили */
+        body {
+          
+
+      
+            background-color: #f4f4f4; /* Светлый фон */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d3d3d3' fill-opacity='0.2'%3E%3Cpath d='M50 0c27.6 0 50 22.4 50 50s-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0zm0 10c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 10c-16.5 0-30 13.5-30 30s13.5 30 30 30 30-13.5 30-30-13.5-30-30-30zm0 10c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: repeat; /* Повторяем узор */
+            color: #333; /* Темный текст для контраста */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+            .section img {
+                max-width: 100%;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+        .amenities-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+            .amenities-list li {
+                background-color: #ecf0f1;
+                margin: 10px 0;
+                padding: 10px;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+            .cta-button:hover {
+                background-color: #2980b9;
+            }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #2c3e50;
+            color: #fff;
+            margin-top: 40px;
+        }
+
+            .footer a {
+                color: #3498db;
+                text-decoration: none;
+            }
+
+                .footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в нашу уютную гостиницу!</h1>
+
+        <!-- Секция 1: Общее описание -->
+        <div class="section">
+            <p>
+                Добро пожаловать в нашу уютную гостиницу, где каждая деталь создана для вашего комфорта и отдыха! Мы предлагаем уникальное сочетание современного дизайна, теплой атмосферы и высокого уровня сервиса. Наша гостиница идеально подходит как для деловых поездок, так и для отдыха с семьей или друзьями.
+            </p>
+            <img src="~/css/k4/k1.jpg" alt="Фото гостиницы">
+        </div>
+
+        <!-- Секция 2: Номера -->
+        <div class="section">
+            <h2>Наши номера</h2>
+            <p>
+                У нас представлены номера различных категорий, чтобы каждый гость мог найти подходящий вариант. Номера <span class="highlight">"Стандарт"</span> — это уютные и функциональные пространства с удобными кроватями, рабочими зонами и всем необходимым для комфортного проживания. Для тех, кто ценит дополнительные удобства, мы предлагаем номера категории <span class="highlight">"Комфорт"</span>, где вас ждут просторные комнаты с современной техникой, мини-барами и стильным дизайном. А для настоящих ценителей роскоши созданы номера <span class="highlight">"Люкс"</span> — это просторные апартаменты с отдельными гостиными зонами, гидромассажными ваннами и панорамными видами.
+            </p>
+            <img src="~/css/l3/л3.jpg" alt="Фото номеров">
+        </div>
+
+        <!-- Секция 3: Удобства -->
+        <div class="section">
+            <h2>Удобства</h2>
+            <p>
+                Каждый номер оснащен всем необходимым для вашего удобства:
+            </p>
+            <ul class="amenities-list">
+                <li>Высокоскоростной Wi-Fi</li>
+                <li>Телевизор с кабельными каналами</li>
+                <li>Сейф</li>
+                <li>Фен и косметические принадлежности</li>
+                <li>Мини-бар (в номерах категории "Комфорт" и "Люкс")</li>
+            </ul>
+        </div>
+
+        <!-- Секция 5: Призыв к действию -->
+        <div class="section" style="text-align: center;">
+            <h2>Мы ждем вас!</h2>
+            <p>
+                Выбирайте нашу гостиницу для вашего следующего путешествия, и мы сделаем все, чтобы ваш отдых или деловая поездка стали незабываемыми! Наша команда всегда готова помочь вам с любыми вопросами и сделать ваше пребывание максимально комфортным.
+            </p>
+            <a href="/Home/Index" class="cta-button">Забронировать номер</a>
+        </div>
+    </div>
+
+    <!-- Футер -->
+    <div class="footer">
+        <p>© 2025 Наша гостиница. Все права защищены.</p>
+       
+    </div>
+</body>
+
+</html>

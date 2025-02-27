@@ -1,0 +1,58 @@
+﻿@model WebApplication2.Models.Bookingg
+
+<h2>Редактирование бронирования</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="RoomId">Номер</label>
+        <select asp-for="RoomId" class="form-control" asp-items="ViewBag.Rooms">
+            <option value="">Выберите номер</option>
+        </select>
+        <span asp-validation-for="RoomId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CheckInDate">Дата заезда</label>
+        <input asp-for="CheckInDate" type="date" class="form-control" />
+        <span asp-validation-for="CheckInDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CheckOutDate">Дата выезда</label>
+        <input asp-for="CheckOutDate" type="date" class="form-control" />
+        <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstName">Имя</label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Фамилия</label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber">Номер телефона</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+    <a asp-action="MyBookings" class="btn btn-secondary">Отмена</a>
+</form>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+<style>
+    body {
+        background-color: #f4f4f4; /* Светлый фон */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d3d3d3' fill-opacity='0.2'%3E%3Cpath d='M50 0c27.6 0 50 22.4 50 50s-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0zm0 10c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 10c-16.5 0-30 13.5-30 30s13.5 30 30 30 30-13.5 30-30-13.5-30-30-30zm0 10c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: repeat; /* Повторяем узор */
+        color: #333; /* Темный текст для контраста */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+</style>

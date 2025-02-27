@@ -1,0 +1,151 @@
+﻿@model WebApplication2.Models.Bookingg
+
+@if (TempData["message"] != null)
+{
+    <div class="alert alert-danger">
+        @TempData["message"]
+    </div>
+}
+
+<h2>Создать бронирование</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="RoomId">Номер</label>
+        <select asp-for="RoomId" class="form-control" id="roomSelect" asp-items="ViewBag.Rooms">
+            <option value="">Выберите номер</option>
+        </select>
+        <span asp-validation-for="RoomId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CheckInDate">Дата заезда</label>
+        <input asp-for="CheckInDate" type="date" class="form-control" id="checkInDate" />
+        <span asp-validation-for="CheckInDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CheckOutDate">Дата выезда</label>
+        <input asp-for="CheckOutDate" type="date" class="form-control" id="checkOutDate" />
+        <span asp-validation-for="CheckOutDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstName">Имя</label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Фамилия</label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber">Номер телефона</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Цена за день</h5>
+                    <p class="card-text" id="roomPrice">—</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Количество дней</h5>
+                    <p class="card-text" id="numberOfDays">—</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Итоговая стоимость</h5>
+                    <p class="card-text" id="totalPrice">—</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Забронировать</button>
+</form>
+
+@section Scripts {
+    <script>
+        var roomPrices = @Html.Raw(Json.Serialize(ViewBag.RoomPrices));
+
+        function calculateNumberOfDays(checkInDate, checkOutDate) {
+            const timeDiff = checkOutDate - checkInDate;
+            return Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+        }
+
+        function updatePriceAndTotal() {
+            const selectedRoomId = document.getElementById('roomSelect').value;
+            const checkInDate = new Date(document.getElementById('checkInDate').value);
+            const checkOutDate = new Date(document.getElementById('checkOutDate').value);
+            const priceElement = document.getElementById('roomPrice');
+            const numberOfDaysElement = document.getElementById('numberOfDays');
+            const totalPriceElement = document.getElementById('totalPrice');
+
+            if (selectedRoomId && roomPrices[selectedRoomId] && checkInDate && checkOutDate && checkOutDate > checkInDate) {
+                const pricePerDay = roomPrices[selectedRoomId];
+                const numberOfDays = calculateNumberOfDays(checkInDate, checkOutDate);
+                const totalPrice = pricePerDay * numberOfDays;
+
+                priceElement.textContent = pricePerDay.toFixed(2) + ' руб.';
+                numberOfDaysElement.textContent = numberOfDays;
+                totalPriceElement.textContent = totalPrice.toFixed(2) + ' руб.';
+            } else {
+                priceElement.textContent = '—';
+                numberOfDaysElement.textContent = '—';
+                totalPriceElement.textContent = '—';
+            }
+        }
+
+        document.getElementById('roomSelect').addEventListener('change', updatePriceAndTotal);
+        document.getElementById('checkInDate').addEventListener('change', updatePriceAndTotal);
+        document.getElementById('checkOutDate').addEventListener('change', updatePriceAndTotal);
+    </script>
+}
+<style>
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+        .card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+        color: #007bff;
+        margin-top: 10px;
+    }
+
+ 
+    body {
+        background-color: #f4f4f4; /* Светлый фон */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d3d3d3' fill-opacity='0.2'%3E%3Cpath d='M50 0c27.6 0 50 22.4 50 50s-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0zm0 10c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 10c-16.5 0-30 13.5-30 30s13.5 30 30 30 30-13.5 30-30-13.5-30-30-30zm0 10c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: repeat; /* Повторяем узор */
+        color: #333; /* Темный текст для контраста */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+</style>
+

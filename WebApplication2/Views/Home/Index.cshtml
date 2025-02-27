@@ -1,0 +1,1232 @@
+﻿@{
+    Layout = "_Layout";
+}
+
+<!-- Отель 1 -->
+<div class="container">
+    <div class="row">
+        <h2 class="room-title">Номера СТАНДАРТ</h2>
+        <!-- Отель 1 -->
+        <div class="col-md-3">
+            <h5>Номер "РУССКИЙ"</h5>
+            <img src="~/css/k1/s1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal1" alt="Отель 1">
+        </div>
+        <!-- Отель 2 -->
+        <div class="col-md-3">
+            <h5>Номер "СЛАВЯНСКИЙ"</h5>
+            <img src="~/css/k2/k1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal2" alt="Отель 2">
+        </div>
+        <!-- Отель 3 -->
+        <div class="col-md-3">
+            <h5>Номер "Уютный уголок"</h5>
+            <img src="~/css/k3/k1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal3" alt="Отель 3">
+        </div>
+        <!-- Отель 4 -->
+        <div class="col-md-3">
+            <h5>Номер "Тихий дворик"</h5>
+            <img src="~/css/k4/k1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal4" alt="Отель 4">
+        </div>
+    </div>
+</div>
+<!-- Отель 2 -->
+<div class="container">
+    <div class="row">
+        <h2 class="room-title">Номера КОМФОРТ</h2>
+        <!-- Отель 1 -->
+        <div class="col-md-3">
+            <h5>Номер "Гармония"</h5>
+            <img src="~/css/kk1/л3.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal5" alt="Отель 1">
+        </div>
+        <!-- Отель 2 -->
+        <div class="col-md-3">
+            <h5>Номер "Оазис спокойствия"</h5>
+            <img src="~/css/kk2/л2.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal6" alt="Отель 2">
+        </div>
+        <!-- Отель 3 -->
+        <div class="col-md-3">
+            <h5>
+                Номер "Элегантность"
+            </h5>
+            <img src="~/css/kk3/л1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal7" alt="Отель 3">
+        </div>
+        <!-- Отель 4 -->
+        <div class="col-md-3">
+            <h5>Номер "Зеленый сад"</h5>
+            <img src="~/css/kk4/л1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal8" alt="Отель 4">
+        </div>
+    </div>
+</div>
+<!-- Отель 3 -->
+<div class="container">
+    <div class="row">
+        <h2 class="room-title">Номера ЛЮКС</h2>
+        <!-- Отель 1 -->
+        <div class="col-md-3">
+            <h5>Номер "Императорский зал"</h5>
+            <img src="~/css/l1/л1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal9" alt="Отель 1">
+        </div>
+        <!-- Отель 2 -->
+        <div class="col-md-3">
+            <h5>Номер "Небесная вилла"</h5>
+            <img src="~/css/l2/л1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal10" alt="Отель 2">
+        </div>
+        <!-- Отель 3 -->
+        <div class="col-md-3">
+            <h5>Номер "Шелковый путь"</h5>
+            <img src="~/css/l3/л1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal11" alt="Отель 3">
+        </div>
+        <!-- Отель 4 -->
+        <div class="col-md-3">
+            <h5>Номер "Эпикурейский рай"</h5>
+            <img src="~/css/l4/л1.jpg" class="img-fluid img-thumbnail clickable-image" data-bs-toggle="modal" data-bs-target="#hotelModal12" alt="Отель 4">
+        </div>
+    </div>
+</div>
+<!-- Модальное окно для Отеля 1 -->
+<div class="modal fade" id="hotelModal1" tabindex="-1" aria-labelledby="hotelModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel1">Номер Русский</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/k1/s1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/k1/s2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/k1/s3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>Просторный номер с минималистичным дизайном, идеально подходящий для короткого отдыха. 
+                            В номере: удобная кровать, рабочая зона и санузел с душевой кабиной.</p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Кнопка снизу -->
+            <div class="modal-footer">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                }
+                else
+                {
+                    <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                }
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="modal fade" id="hotelModal2" tabindex="-1" aria-labelledby="hotelModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="hotelModalLabel2">Номер СЛАВЯНСКИЙ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <!-- Фото слева -->
+                        <div class="col-md-6">
+                            <div id="carouselHotel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="~/css/k2/k1.jpg" class="d-block w-100" alt="Фото 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="~/css/k2/k2.jpg" class="d-block w-100" alt="Фото 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="~/css/k2/k3.jpg" class="d-block w-100" alt="Фото 3">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel2" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Предыдущий</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel2" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Следующий</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Описание справа -->
+                        <div class="col-md-6">
+                            <p>
+                                Номер с видом на внутренний двор гостиницы. Уютная атмосфера, удобная мебель и все необходимое для комфортного проживания.
+                            </p>
+                            <h6>Удобства:</h6>
+                            <div class="amenities">
+                                <div class="amenity-item">
+                                    <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                    <span>Wi-Fi</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                    <span>Сейф</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                    <span>Телефон</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                    <span>Односпальная кровать</span>
+                                </div>
+                                <div class="amenity-item">
+                                    <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                    <span>Тропический душ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопка снизу -->
+                    <div class="modal-footer">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                        }
+                        else
+                        {
+                            <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                        }
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+<div class="modal fade" id="hotelModal3" tabindex="-1" aria-labelledby="hotelModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel2">Номер Уютный уголок</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel3" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/k3/k1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/k3/k2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/k3/k3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel3" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel3" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Яркий номер с большими окнами, наполненный естественным светом. Подходит для тех, кто ценит простоту и комфорт.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="modal fade" id="hotelModal4" tabindex="-1" aria-labelledby="hotelModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel2">Номер Уютный уголок</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel4" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/k4/k1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/k4/k2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/k4/k3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel4" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel4" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Номер с видом на город. Удобная кровать, телевизор и все необходимое для отдыха после насыщенного дня.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- Модальное окно для Отеля 2 -->
+<div class="modal fade" id="hotelModal5" tabindex="-1" aria-labelledby="hotelModalLabel5" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel1">Номер Гармония</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel5" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/kk1/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk1/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk1/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel5" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel5" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Просторный номер с современным дизайном и дополнительными удобствами: мини-бар, кофемашина и мягкое кресло для отдыха.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-glass-cheers"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бар</span>
+                            </div>
+                            <div class="amenity-item">
+                                 <i class="fas fas fa-tshirt"></i>
+                                 <span>Халат</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="hotelModal6" tabindex="-1" aria-labelledby="hotelModalLabel6" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel6">Номер Оазис спокойствия</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel6" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/kk2/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk2/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk2/л1.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel6" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel6" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Номер с пастельными тонами в интерьере, создающими расслабляющую атмосферу. Ванная комната с косметическими принадлежностями.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-glass-cheers"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бар</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-tshirt"></i>
+                                <span>Халат</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="hotelModal7" tabindex="-1" aria-labelledby="hotelModalLabel7" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel7">Номер Элегантность</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel7" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/kk3/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk3/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk3/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel7" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel7" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Стильный номер с дизайнерской мебелью и текстилем. Идеально подходит для деловых поездок или романтического отдыха.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-glass-cheers"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бар</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-tshirt"></i>
+                                <span>Халат</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="hotelModal8" tabindex="-1" aria-labelledby="hotelModalLabel8" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel7">Номер Зеленый сад</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel8" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/kk4/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk4/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/kk4/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel8" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel8" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Номер с видом на парк или сад. В интерьере использованы натуральные материалы, создающие ощущение единения с природой.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-glass-cheers"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бар</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-tshirt"></i>
+                                <span>Халат</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Модальное окно для Отеля 3 -->
+<div class="modal fade" id="hotelModal9" tabindex="-1" aria-labelledby="hotelModalLabel9" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel9">Номер Императорский зал</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel9" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/l1/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l1/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l1/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel9" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel9" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Роскошный номер с отдельной гостиной зоной, спальней и ванной комнатой с гидромассажной ванной. Интерьер выполнен в классическом стиле.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-glass-cheers"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бар</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-tshirt"></i>
+                                <span>Халат</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-parking"></i> <!-- Иконка Wi-Fi -->
+                                <span>Парковка</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-swimming-pool"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бассейн</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-tshirt"></i> <!-- Иконка Wi-Fi -->
+                                <span>Прачечная</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="hotelModal10" tabindex="-1" aria-labelledby="hotelModalLabel10" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel10">Номер Небесная вилла</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel10" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/l2/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l2/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l2/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel10" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel10" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Роскошный номер с отдельной гостиной зоной, спальней и ванной комнатой с гидромассажной ванной. Интерьер выполнен в классическом стиле.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-parking"></i> <!-- Иконка Wi-Fi -->
+                                <span>Парковка</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-swimming-pool"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бассейн</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-tshirt"></i> <!-- Иконка Wi-Fi -->
+                                <span>Прачечная</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="hotelModal11" tabindex="-1" aria-labelledby="hotelModalLabel11" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel11">Номер Эпикурейский рай</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel11" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/l3/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l3/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l3/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel11" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel11" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Номер для ценителей роскоши. Включает в себя мини-кухню, обеденную зону, спальню с кроватью king-size и ванную комнату с сауной.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-parking"></i> <!-- Иконка Wi-Fi -->
+                                <span>Парковка</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-swimming-pool"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бассейн</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-tshirt"></i> <!-- Иконка Wi-Fi -->
+                                <span>Прачечная</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="hotelModal12" tabindex="-1" aria-labelledby="hotelModalLabel12" aria-hidden="true">
+    <div class="modal-dialog modal-lg custom-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="hotelModalLabel11">Номер Шелковый путь</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <!-- Фото слева -->
+                    <div class="col-md-6">
+                        <div id="carouselHotel12" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="~/css/l4/л1.jpg" class="d-block w-100" alt="Фото 1">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l4/л2.jpg" class="d-block w-100" alt="Фото 2">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="~/css/l4/л3.jpg" class="d-block w-100" alt="Фото 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHotel12" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Предыдущий</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselHotel12" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Следующий</span>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Описание справа -->
+                    <div class="col-md-6">
+                        <p>
+                            Роскошный номер с отдельной гостиной зоной, спальней и ванной комнатой с гидромассажной ванной. Интерьер выполнен в классическом стиле.
+                        </p>
+                        <h6>Удобства:</h6>
+                        <div class="amenities">
+                            <div class="amenity-item">
+                                <i class="fas fa-wifi"></i> <!-- Иконка Wi-Fi -->
+                                <span>Wi-Fi</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-lock"></i> <!-- Иконка сейфа -->
+                                <span>Сейф</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-phone"></i> <!-- Иконка телефона -->
+                                <span>Телефон</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-bed"></i> <!-- Иконка кровати -->
+                                <span>Односпальная кровать</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-shower"></i> <!-- Иконка кровати -->
+                                <span>Тропический душ</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-coffee"></i>
+                                <span>Кофемашина</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fas fa-parking"></i> <!-- Иконка Wi-Fi -->
+                                <span>Парковка</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-swimming-pool"></i> <!-- Иконка Wi-Fi -->
+                                <span>Бассейн</span>
+                            </div>
+                            <div class="amenity-item">
+                                <i class="fas fa-tshirt"></i> <!-- Иконка Wi-Fi -->
+                                <span>Прачечная</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Кнопка снизу -->
+                <div class="modal-footer">
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <a href="@Url.Action("Create", "Booking")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    else
+                    {
+                        <a href="@Url.Action("Logg1", "Account")" class="btn btn-primary">Забронировать номер</a>
+                    }
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Стили -->
+<style>
+    .img-thumbnail {
+        width: 150%; /* или фиксированная ширина, например 200px */
+        height: 300px; /* фиксированная высота */
+        object-fit: cover; /* чтобы изображение заполняло область без искажений */
+    }
+    .room-title {
+        text-align: center; /* Выравнивание по центру */
+        font-family: 'Arial', sans-serif; /* Шрифт */
+        font-size: 24px; /* Размер шрифта */
+        font-weight: bold; /* Жирный шрифт */
+        color: #333; /* Цвет текста */
+        margin-bottom: 20px; /* Отступ снизу */
+    }
+    .amenities {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px; /* Расстояние между элементами */
+        }
+
+        .amenity-item {
+            display: flex;
+            align-items: center;
+            gap: 5px; /* Расстояние между иконкой и текстом */
+            background-color: #f8f9fa; /* Фон */
+            padding: 5px 10px;
+            border-radius: 5px; /* Скругленные углы */
+            font-size: 14px;
+        }
+
+            .amenity-item i {
+                font-size: 16px; /* Размер иконки */
+                color: #007bff; /* Цвет иконки */
+            }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh; /* Минимальная высота страницы */
+        background-color: #f4f4f4; /* Светлый фон */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill='%23d3d3d3' fill-opacity='0.2'%3E%3Cpath d='M50 0c27.6 0 50 22.4 50 50s-22.4 50-50 50S0 77.6 0 50 22.4 0 50 0zm0 10c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm0 10c-16.5 0-30 13.5-30 30s13.5 30 30 30 30-13.5 30-30-13.5-30-30-30zm0 10c-11 0-20 9-20 20s9 20 20 20 20-9 20-20-9-20-20-20z'/%3E%3C/g%3E%3C/svg%3E");
+        background-repeat: repeat; /* Повторяем узор */
+        color: #333; /* Темный текст для контраста */
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+  
+    }
+
+    .container {
+        flex-grow: 1; /* Растягиваем контейнер на всю доступную высоту */
+        margin-bottom: 50px; /* Отступ снизу */
+    }
+
+    .footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: auto; /* Футер всегда внизу */
+    }
+
+    .custom-modal {
+
+        max-width: 90%; /* Ширина модального окна */
+        width: 1000px; /* Фиксированная ширина */
+        margin: 1.75rem auto; /* Центрирование */
+    }
+
+        .custom-modal .modal-content {
+            height: 50vh; /* Высота модального окна */
+            overflow-y: auto; /* Добавляем прокрутку, если содержимое не помещается */
+        }
+
+</style>
